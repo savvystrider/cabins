@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap");
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    line-height: 1.4;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 1.5em;
+}
+
+nav ul {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: #72A84A;
+    height: 100vh;
+    padding-top: 5em;
+    z-index: 100;
+    text-align: center;
+    transition: all .2s ease;
+}
+
+.logo {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+nav a {
+    display: block;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1em;
+    transition: all .15s ease;
+}
+
+.close-menu-btn a {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.open-nav {
+    visibility: unset;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.menu-btn,
+.close-menu-btn {
+    cursor: pointer;
+}
+
+main {
+    background: url(./images/forest.jpg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 3em;
+}
+
+h1 span {
+    display: block;
+    margin-bottom: .5em;
+    /* clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); */
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #72A84A;
+    padding: .5em 1.5em;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    line-height: 1.6;
+}
+
+ul.featured-cabins {
+    width: 60%;
+    margin: 0 auto;
+}
+
+ul.featured-cabins li {
+    margin-bottom: 3em;
+}
+
+.cabin-img {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cabin-title {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: .25em;
+    font-weight: bold;
+}
+
+.cabin-desc {
+    font-size: .9rem;
+    line-height: 1.6;
+    margin-bottom: 3em;
+}
+
+.cabin-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    background-color: #72A84A;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: .5em 1em;
+    color: black;
+    margin: 2em 0;
+    position: relative;
+}
+
+.cabin-cta::after {
+    content: "";
+    position: absolute;
+    bottom: -50%;
+    right: -9%;
+    background: white;
+    width: 120%;
+    height: 2px;
+}
+
+.features {
+    padding: 1em;
+}
+
+.features li img {
+    margin-inline: auto;
+}
+
+.final-section {
+    position: relative;
+    padding: 1em;
+}
+
+.main-quote {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-style: italic;
+    line-height: 1.6;
+    letter-spacing: .03em;
+    background: #1a1a1a;
+    color: white;
+    padding: 1em;
+}
+
+.main-cite {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-block: .25em;
+    border-bottom: 1px dotted #fff;
+    border-top: 1px dotted #fff;
+    margin-bottom: 2em;
+}
+
+.test-img {
+    border-radius: 50%;
+    outline: 5px solid #fff;
+    outline-offset: 5px;
+    max-width: 15%;
+    margin-top: 1em;
+    margin-inline: auto;
+}
+
+.test-description {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.test-auth {
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 2em;
+}
+
+.fern {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    opacity: 15%;
+    z-index: 0;
+}
+
+@media screen and (min-width: 550px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu-btn, .close-menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        visibility: unset;
+        opacity: 1;
+        background: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: unset;
+        height: auto;
+        
+    }
+
+    nav a {
+        font-size: .9rem;
+        padding: 0 1em;
+        font-weight: normal;
+    }
+
+    nav .active a {
+        font-weight: bold;
+    }
+
+    ul.featured-cabins {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 3em;
+    }
+
+    .fern {
+        opacity: 10%;
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    ul.features {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 3em;
+    }
+
+    .fern {
+        opacity: 8%;
+    }
+}
+
+@media screen and (min-width: 800px) {    
+    nav a:hover, nav a:focus {
+        color: #72A84A;
+        text-decoration: underline;
+    }
+
+    .reservation-link a {
+        color: #72A84A;
+        font-weight: bold;
+    }
+    
+    .hero {
+        display: grid;
+        grid-template-columns: 40% 50%;
+        margin-top: 1em;
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .left {
+        padding-inline: 6em;
+    }
+
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 3em;
+    }
+
+    .test-img {
+        max-width: 10%;
+        margin-bottom: 1.5em;
+    }
+}
