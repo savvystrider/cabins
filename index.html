@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabin Rentals - UI Design Final Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">scenic.forests</a>
+
+      <nav>
+        <img
+          src="./images/menu.svg"
+          class="menu-btn"
+          id="menu-btn"
+          alt="open menu icon"
+        />
+        <ul class="nav-menu" id="nav-menu" aria-expanded="false">
+          <li class="close-menu-btn">
+            <a href=""
+              ><img
+                src="./images/exit.svg"
+                id="close-menu-btn"
+                alt="close menu icon"
+            /></a>
+          </li>
+
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="cabins.html">Cabins</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li class="reservation-link"><a href="#">Reservations</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="left">
+          <p class="subtitle">Forest Vacations</p>
+          <h1>
+            <span>Scenic</span>
+            <span>Beauties</span>
+            <span>Await You</span>
+          </h1>
+          <a href="cabins.html" class="cta-btn">All Rentals</a>
+        </div>
+        <ul class="featured-cabins">
+          <li>
+            <a href="#"><img src="./images/cabin1.jpg" class="cabin-img" /></a>
+
+            <p class="cabin-title">Whispering Willows</p>
+            <p class="cabin-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor
+            </p>
+
+            <a href="#" class="cabin-cta">
+              <span>Cabin Info</span>
+              <img src="./images/arrows.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/cabin2.jpg" class="cabin-img" /></a>
+
+            <p class="cabin-title">Whispering Willows</p>
+            <p class="cabin-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor
+            </p>
+
+            <a href="#" class="cabin-cta">
+              <span>Cabin Info</span>
+              <img src="./images/arrows.svg" />
+            </a>
+          </li>
+          <li>
+            <a href="#"><img src="./images/cabin3.jpg" class="cabin-img" /></a>
+
+            <p class="cabin-title">Whispering Willows</p>
+            <p class="cabin-description">
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor
+            </p>
+
+            <a href="#" class="cabin-cta">
+              <span>Cabin Info</span>
+              <img src="./images/arrows.svg" />
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="amenities">
+        <div class="wrapper">
+          <ul class="features">
+            <li>
+              <img src="./images/icon-wifi.svg" />
+
+              <h2>Free WiFi</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </li>
+            <li>
+              <img src="./images/icon-stocked.svg" />
+
+              <h2>Free WiFi</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </li>
+            <li>
+              <img src="./images/icon-hottub.svg" />
+
+              <h2>Free WiFi</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="final-section">
+        <div class="wrapper">
+          <blockquote class="main-quote">
+            "I seriously wasn't expecting this beauty."
+          </blockquote>
+          <cite class="main-cite">-- Jane Doe</cite>
+
+          <ul class="testimonials">
+            <li>
+              <img src="./images/person.jpg" class="test-img" />
+
+              <div class="test-left">
+                <p class="test-description">
+                  "My family and I absolutely love our cabin vacation!"
+                </p>
+                <p class="test-auth">-- John Doe</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/person.jpg" class="test-img" />
+
+              <div class="test-left">
+                <p class="test-description">
+                  "My family and I absolutely love our cabin vacation!"
+                </p>
+                <p class="test-auth">-- John Doe</p>
+              </div>
+            </li>
+            <li>
+              <img src="./images/person.jpg" class="test-img" />
+
+              <div class="test-left">
+                <p class="test-description">
+                  "My family and I absolutely love our cabin vacation!"
+                </p>
+                <p class="test-auth">-- John Doe</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <img src="./images/fern.svg" class="fern" />
+      </section>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha384-d+vyQ0dYcymoP8ndq2hW7FGC50nqGdXUEgoOUGxbbkAJwZqL7h+jKN0GGgn9hFDS"
+        crossorigin="anonymous"
+      ></script>
+      <script src="./index.js"></script>
+    </main>
+  </body>
+</html>
